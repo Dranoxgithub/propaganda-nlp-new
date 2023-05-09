@@ -1,0 +1,9 @@
+written after dev, this doc might have errors.
+- use encode&sort 
+- tokenization
+    - for span:
+        - tokenize_for_span: treat multiple labels associated with a single text fragment as multiple datapoints 
+        - merge_multiple_labels, split_merge_multiple_labels, long_merge_multiple_labels: treat multiple labels associated with a single text fragment as a single datapoint; split_merge_multiple_labels is generally the same as merge_multiple_labels, just specifically for the split data; long_merge_multiple_labels is for longformer, prob not most up to date. (Check its diff with merge_multiple_labels if you are going to use long_merge_multiple_labels)
+        LO
+    - for chunk:
+        - tokenizer_for_chunk_CE (!), tokenizer_for_chunk_long, tokenizer_for_chunk 
